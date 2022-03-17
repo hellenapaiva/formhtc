@@ -41,6 +41,7 @@ body {
   width: 100%;
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 
 .form-control label {
@@ -53,6 +54,14 @@ body {
   font-size: 14px;
   padding: 14px;
 }
+
+.form-control i {
+  position: absolute;
+  top:  40px;
+  right:15px;
+  visibility: hidden;
+}
+
 
 .form-control small {
   visibility: hidden;
@@ -72,12 +81,17 @@ body {
   color: #e74c3c;
 }
 
-.form-control i {
-  position: absolute;
-  top: 45px;
-  right: 10px;
-  visibility: hidden;
+.form-control.success i.fa-check-circle {
+  color: #2ecc71;
+  visibility: visible;
 }
+
+.form-control.error i.fa-exclamation-circle {
+  color: #e74c3c;
+  visibility: visible;
+}
+
+
 
 .form-control-box{ 
   display: flex;
