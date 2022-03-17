@@ -126,6 +126,17 @@ body {
   width: 100%;
   margin-top: 10px;
 }
+.termo-control{
+  display: flex;
+  width: 100%;
+  
+}
+
+.termo-control label{
+ text-align: justify;
+ margin-left: 10px; 
+  
+}
 
 .btn {
   display: flex;
