@@ -31,8 +31,8 @@ function checkInputs() {
 
   if (passwordValue === "") {
     setErrorFor(password, "A senha é obrigatória.");
-  } else if (passwordValue.length < 7) {
-    setErrorFor(password, "A senha precisa ter no mínimo 7 caracteres.");
+  } else if (passwordValue.length < 6) {
+    setErrorFor(password, "A senha precisa ter no mínimo 6 caracteres.");
   } else {
     setSuccessFor(password);
   }
@@ -60,17 +60,14 @@ function setErrorFor(input, message) {
   const formControl = input.parentElement;
   const small = formControl.querySelector("small");
 
-  // Adiciona a mensagem de erro
+  
   small.innerText = message;
 
-  // Adiciona a classe de erro
   formControl.className = "form-control error";
 }
 
 function setSuccessFor(input) {
   const formControl = input.parentElement;
-
-  // Adicionar a classe de sucesso
   formControl.className = "form-control success";
 }
 
