@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Formulário de Cadastro</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>Faça seu cadastro</h1>
+      </div>
+
+      <form class="form" id="form">
+        <div class="form-control">
+          <label for="nameField">Nome Completo</label>
+          <input
+            type="text"
+            id="nameField"
+            placeholder="Digite seu nome completo"
+          />
+          <i class="fas fa-exclamation-circle"></i>
+          <i class="fas fa-check-circle"></i>
+          <small>Mensagem de erro</small>
+        </div>
+        <div class="form-control-box">
+          <div class="wrapp-date">
+            <label for="dateField" class="label">Data de Nascimento</label>
+            <input type="date" id="dateField" />
+          </div>
+          <div class="wrapp-country">
+            <label for="" class="label">País*</label>
+            <select>
+              <option value="">Selecione seu país</option>
+              <option value="">Brasil</option>
+              <option value="">Estados Unidos</option>
+              <option value="">Canadá</option>
+              <option value="">Japão</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="radio-container">
+          <label for="" class="radio-title">Gênero:</label>
+          <div class="radio-wrapp">
+            <div class="">
+              <input type="radio" name="genre" value="male" id="male" />
+              <label for="male">Masculino</label>
+            </div>
+
+            <div>
+              <input type="radio" name="genre" value="femme" id="femme" />
+              <label for="femme">Feminino</label>
+            </div>
+
+            <div>
+              <input
+                type="radio"
+                name="genre"
+                value="notDeclared"
+                id="notDeclared"
+              />
+              <label class="notDeclared">Não Declarado</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-control">
+          <label for="email">E-mail</label>
+          <input type="text" id="email" placeholder="Digite seu e-mail" />
+          <i class="fas fa-exclamation-circle"></i>
+          <i class="fas fa-check-circle"></i>
+          <small>Mensagem de erro</small>
+        </div>
+        <div class="form-control">
+          <label for="password">Senha</label>
+          <input
+            type="text"
+            name="password"
+            id="password"
+            placeholder="Crie sua senha"
+          />
+
+          <small>Mensagem de erro</small>
+        </div>
+        <div class="form-control">
+          <label for="passwordConfirmation">Confirmar senha</label>
+          <input
+            type="text"
+            name="passwordConfirmation"
+            id="passwordConfirmation"
+            placeholder="Confirme sua senha"
+          />
+
+          <small>Mensagem de erro</small>
+        </div>
+        <div>
+          <input type="checkbox" />
+          <label for="">
+            Aceito os termos e condições e concordo com as políticas de
+            privacidade do Hall To Code.
+          </label>
+        </div>
+
+        <button class="btn" type="submit">Cadastrar</button>
+
+        <label
+          >Já tem uma conta no Hall To Code?
+          <a target="_blank" rel="”nofollow”" href="/">Entre agora</a>
+        </label>
+      </form>
+    </div>
+
+    <script src="./scripts.js"></script>
+  </body>
+</html>
